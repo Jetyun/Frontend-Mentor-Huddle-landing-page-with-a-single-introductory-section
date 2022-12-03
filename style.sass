@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+//must have class in front end mentor challenge
+.attribution 
+    font-size: 11px
+    text-align: center
+
+.attribution a 
+    color: hsl(228, 45%, 44%)
+
+//custom variable
+$normal-weight:400
+$bold-weight:600
+$color-primary-one: hsl(257, 40%, 49%) //violet
+$color-primary-two: hsl(300, 69%, 71%) //Soft Magenta  
+$fontFamily-one:'Poppins', sans-serif
+$fontFamily-two: 'Open Sans', sans-serif
+//tag
+body
+    padding: 35px
+    background-image: url("images/bg-mobile.svg")
+    background-size: auto
+    background-repeat: no-repeat
+    background-color: $color-primary-one
+    text-align: center
+
+//class
+.button
+    width: 200px
+    margin: auto
+    background-color: white
+    color: $color-primary-one
+    margin-bottom: 3.12em
+    padding: 10px 70px
+    border-radius: 100px
+.button:hover
+    color: white
+    background-color: $color-primary-two
+.secondary
+    display: flex
+    justify-content: center
+.icon
+    color: white
+    margin-right: 10px
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)
+.icon:hover
+    filter: invert(85%) sepia(21%) saturate(5564%) hue-rotate(243deg) brightness(95%) contrast(90%)
+.logo
+    width: 120px
+    height: 70px
+
+    margin-right: 100%
+.main_img
+    margin: 20px 0 40px 0   
+    width: 100%
+    height: 100%
+.main_title, .main_explanation
+    color: white
+    margin-bottom: 1.25em
+.main_title
+    font-family: $fontFamily-one
+.main_explanation
+    font-family: $fontFamily-two
+
+@media only screen and (min-width: 863px)
+    body
+        background-image: url("images/bg-desktop.svg")
+        text-align: left
+    .desktop_flexBox
+        display: flex
+        justify-content: center
+    .main_img
+        width: 50%
+        height: 50%
+    .primary
+        padding-top: 50px
+        padding-left: 20px
+    .main_title
+        font-size: min(3vw, 30px)
+        width: min(50vw,400px)
+    .main_explanation
+        max-width:  460px
+    .button
+        padding: 10px 30px
+        width: 140px
+@media only screen and (min-width: 1023px)
+    .icon
+        width: 30px
+        height: 30px
+    .logo
+        margin-left: min(10vw, 100px)
+        width: 220px
+        height: 80px
+    .main_title
+        margin-bottom: 45px
+    .primary
+        padding-top: 60px
+    .secondary
+        justify-content: right
+        margin-right: 100px
+
+    
